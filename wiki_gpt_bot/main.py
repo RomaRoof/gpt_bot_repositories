@@ -1,6 +1,9 @@
 import os
 import openai
 from aiogram import Bot, Dispatcher
+import logging
+
+logging.basicConfig(level=logging.INFO)
 
 GPT_MODEL = "gpt-3.5-turbo"
 
