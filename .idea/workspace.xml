@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2656800-8c9e-4241-987b-62867121f321" name="Changes" comment="add project">
-      <change afterPath="$PROJECT_DIR$/srv.env" afterDir="false" />
+    <list default="true" id="c2656800-8c9e-4241-987b-62867121f321" name="Changes" comment="Переменные среды">
+      <change afterPath="$PROJECT_DIR$/wiki_gpt_bot/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/standart_bild.py" beforeDir="false" afterPath="$PROJECT_DIR$/standart_bild.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,16 +44,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.noname.executor": "Run",
-    "Python.standart_bild (1).executor": "Run",
-    "Python.standart_bild.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/Рома Учеба/Founder/DSHomeWork/gpt_bot_repositories"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.noname.executor&quot;: &quot;Run&quot;,
+    &quot;Python.standart_bild (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.standart_bild.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Рома Учеба/Founder/DSHomeWork/gpt_bot_repositories&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Рома Учеба\Founder\DSHomeWork\gpt_bot_repositories" />
@@ -174,11 +173,29 @@
       <option name="project" value="LOCAL" />
       <updated>1722670965362</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="некоторые корректировки кода. Код носит справочную информацию">
+      <option name="closed" value="true" />
+      <created>1723096052777</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1723096052777</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Переменные среды">
+      <option name="closed" value="true" />
+      <created>1723096185356</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1723096185356</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add project" />
-    <option name="LAST_COMMIT_MESSAGE" value="add project" />
+    <MESSAGE value="некоторые корректировки кода. Код носит справочную информацию" />
+    <MESSAGE value="Переменные среды" />
+    <option name="LAST_COMMIT_MESSAGE" value="Переменные среды" />
   </component>
 </project>
