@@ -25,14 +25,6 @@ if not os.environ["OPENAI_API_KEY"]:
 
 print("API ключ успешно установлен.")
 
-
-# Проверка наличия ключа API
-if not os.environ["OPENAI_API_KEY"]:
-    print("API ключ не введен. Завершение программы.")
-    exit()
-
-print("API ключ успешно установлен.")
-
 # Запрос к chatGPT
 query = 'Когда проходил чемпионат?'
 # Создаём объект OpenAI
