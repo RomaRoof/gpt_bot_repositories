@@ -1,5 +1,5 @@
 import os
-
+import openai
 from aiogram import Bot, Dispatcher
 
 GPT_MODEL = "gpt-3.5-turbo"
