@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2656800-8c9e-4241-987b-62867121f321" name="Changes" comment="Переменные среды">
-      <change afterPath="$PROJECT_DIR$/wiki_gpt_bot/main.py" afterDir="false" />
+    <list default="true" id="c2656800-8c9e-4241-987b-62867121f321" name="Changes" comment="добавлена регистрация хендлеров">
+      <change afterPath="$PROJECT_DIR$/wiki_gpt_bot/base_wiki.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiki_gpt_bot/gpt_init.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/standart_bild.py" beforeDir="false" afterPath="$PROJECT_DIR$/standart_bild.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiki_gpt_bot/hendlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/wiki_gpt_bot/hendlers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiki_gpt_bot/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/wiki_gpt_bot/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,22 +48,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.noname.executor&quot;: &quot;Run&quot;,
-    &quot;Python.standart_bild (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.standart_bild.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Рома Учеба/Founder/DSHomeWork/gpt_bot_repositories&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main.executor": "Run",
+    "Python.noname.executor": "Run",
+    "Python.standart_bild (1).executor": "Run",
+    "Python.standart_bild.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/Рома Учеба/Founder/DSHomeWork/gpt_bot_repositories"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Рома Учеба\Founder\DSHomeWork\gpt_bot_repositories" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.standart_bild (1)">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gpt_bot_repositories" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wiki_gpt_bot" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wiki_gpt_bot/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="noname" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="gpt_bot_repositories" />
       <option name="ENV_FILES" value="" />
@@ -128,6 +155,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.standart_bild (1)" />
         <item itemvalue="Python.noname" />
       </list>
@@ -189,13 +217,85 @@
       <option name="project" value="LOCAL" />
       <updated>1723096185356</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="удален дублирующийся код">
+      <option name="closed" value="true" />
+      <created>1723098467058</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1723098467058</updated>
+    </task>
+    <task id="LOCAL-00007" summary="commit">
+      <option name="closed" value="true" />
+      <created>1723098485744</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1723098485744</updated>
+    </task>
+    <task id="LOCAL-00008" summary="файл запуска бота (не доработан)">
+      <option name="closed" value="true" />
+      <created>1723098548150</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1723098548150</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Добавлен файл хендлеров (пустой)">
+      <option name="closed" value="true" />
+      <created>1723099664919</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1723099664919</updated>
+    </task>
+    <task id="LOCAL-00010" summary="добавлен импорт openai">
+      <option name="closed" value="true" />
+      <created>1723099735562</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1723099735562</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add logiing">
+      <option name="closed" value="true" />
+      <created>1723099849778</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1723099849778</updated>
+    </task>
+    <task id="LOCAL-00012" summary="удален проверочный код">
+      <option name="closed" value="true" />
+      <created>1723103977415</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1723103977415</updated>
+    </task>
+    <task id="LOCAL-00013" summary="добавлена регистрация хендлеров">
+      <option name="closed" value="true" />
+      <created>1723104008623</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1723104008623</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add project" />
     <MESSAGE value="некоторые корректировки кода. Код носит справочную информацию" />
     <MESSAGE value="Переменные среды" />
-    <option name="LAST_COMMIT_MESSAGE" value="Переменные среды" />
+    <MESSAGE value="удален дублирующийся код" />
+    <MESSAGE value="commit" />
+    <MESSAGE value="файл запуска бота (не доработан)" />
+    <MESSAGE value="Добавлен файл хендлеров (пустой)" />
+    <MESSAGE value="добавлен импорт openai" />
+    <MESSAGE value="add logiing" />
+    <MESSAGE value="удален проверочный код" />
+    <MESSAGE value="добавлена регистрация хендлеров" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавлена регистрация хендлеров" />
   </component>
 </project>

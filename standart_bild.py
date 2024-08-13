@@ -3,7 +3,7 @@
 import getpass
 # Для работы с системными командами
 import os
-
+from dotenv import load_dotenv
 import openai
 
 # Выбираем модель GPT
@@ -15,15 +15,9 @@ GPT_MODEL = "gpt-3.5-turbo"
 # проще запускать через input()
 #os.environ["OPENAI_API_KEY"] = getpass.getpass("Введите OpenAI API Key:")
 # Ввод ключа API через input()
-api_key = input("Введите OpenAI API Key: ")
-os.environ["OPENAI_API_KEY"] = api_key
-
-# Проверка наличия ключа API
-if not os.environ["OPENAI_API_KEY"]:
-    print("API ключ не введен. Завершение программы.")
-    exit()
-
-print("API ключ успешно установлен.")
+dotenv_path = os.path.join(os.path.dirname(__file__), 'srv.env')
+load_dotenv(dotenv_path)
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 # Запрос к chatGPT
 query = 'Когда проходил чемпионат?'
@@ -32,22 +26,21 @@ query = 'Когда проходил чемпионат?'
 #    api_key=os.environ.get("OPENAI_API_KEY"),
 # )
 # Отправляем запрос к OpenAI API
-response = openai.ChatCompletion.create(
-    messages=[
-        {'role': 'system', 'content': 'Вы отвечаете на вопросы о Чемпионате мира по крикету 2023'},
-        {'role': 'user', 'content': query},
-    ],
-    model=GPT_MODEL,
-    temperature=0,
-)
-# response = openai.chat.completions.create(
+#response = openai.ChatCompletion.create(
 #    messages=[
 #        {'role': 'system', 'content': 'Вы отвечаете на вопросы о Чемпионате мира по крикету 2023'},
 #        {'role': 'user', 'content': query},
 #    ],
 #    model=GPT_MODEL,
 #    temperature=0,
-# )
+#)
+response = openai.chat.completions.create(
+    messages=[
+        {'role': 'system', 'content': 'Вы отвечаете на вопросы о Чемпионате мира по крикету 2023'},
+        {'role': 'user', 'content': query},
+    ],
+    model=GPT_MODEL,
+    temperature=0,)
 
 # Выводим результат
 print(response.choices[0].message.content)
